@@ -20,13 +20,13 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: true            
       - run:
-          name: docker code building 
+          name: docker building 
           command: |   
             source ~/.devops/bin/activate          
             docker build --tag=my_hello_world .
             docker image ls	  
       - run:
-          name: docker code uploading  
+          name: docker uploading  
           command: |   
             docker image ls	 
             docker login -u $DOCKER_USER -p $DOCKER_PASS
