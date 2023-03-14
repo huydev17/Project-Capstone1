@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myhelloworld-deployment
+  labels:
+    env: PROD
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      env: PROD
+  template:
+    metadata:
+      labels:
+        env: PROD
+    spec:
+      containers:
+      - name: myhelloworld
+        image: huyluu171020/proj-capstone
+        ports:
+        - containerPort: 80
