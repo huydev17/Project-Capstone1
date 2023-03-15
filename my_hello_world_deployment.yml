@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: myhelloworld
-        image: huyluu171020/proj-capstone
+        image: huyluu171020/my_hello_world
         ports:
         - containerPort: 80
