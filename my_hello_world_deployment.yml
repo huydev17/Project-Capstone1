@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: myhelloworld-deployment
   labels:
-    env: PROD
+    env: EKScluster
 spec:
   replicas: 2
   selector:
     matchLabels:
-      env: PROD
+      env: EKScluster
   template:
     metadata:
       labels:
-        env: PROD
+        env: EKScluster
     spec:
       containers:
       - name: myhelloworld
