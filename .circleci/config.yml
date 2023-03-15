@@ -31,7 +31,7 @@ jobs:
             docker image ls	 
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker tag my_hello_world $DOCKER_USER/my_hello_world
-            docker huyluu171020/proj-capstone
+            docker huyluu171020/my_hello_world:latest
             
   deploy-docker-image:
     docker:
