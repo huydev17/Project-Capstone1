@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: myhelloworld-svc
   labels:
-    env: PROD
+    env: EKScluster
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    env: PROD
+    env: EKScluster
