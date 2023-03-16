@@ -14,7 +14,7 @@ jobs:
       - run:
           name: code linting 
           command: |      
-            source ~/devop/bin/activate
+            source ~/.devops/bin/activate
             make install
             make lint   
       - setup_remote_docker:
